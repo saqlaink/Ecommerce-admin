@@ -1,12 +1,20 @@
 import Nav from '@/components/Nav';
-import { useSession, signIn, signOut } from 'next-auth/react';
+import { useSession, signIn } from 'next-auth/react';
 import { useState } from 'react';
 import Logo from './Logo';
+import Spinner from './Spinner';
 
 export default function Layout({ children }) {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
   const [showNav, setShowNav] = useState(false);
 
+  if (status === 'loading') {
+    return (
+      <div className="flex justify-center items-center border border-red-50 w-screen h-screen">
+        <Spinner fullWidth={true} />
+      </div>
+    );
+  }
   if (!session) {
     return (
       <div className="bg-gray-800 w-screen h-screen flex items-center">

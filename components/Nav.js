@@ -1,7 +1,8 @@
-import { signOut } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Logo from './Logo';
+import Spinner from './Spinner';
 
 export default function Nav({ show }) {
   const inactiveLink = 'flex gap-1 p-1';
@@ -10,9 +11,19 @@ export default function Nav({ show }) {
   const activeIcon = inactiveIcon + ' text-primary';
   const router = useRouter();
   const { pathname } = router;
+  const { data: session, status } = useSession();
+
   async function logout() {
     await router.push('/');
     await signOut();
+  }
+
+  if (status === 'loading') {
+    return (
+      <div className="flex justify-center items-center border border-red-50 w-screen h-screen">
+        <Spinner fullWidth={true} />
+      </div>
+    );
   }
 
   return (
