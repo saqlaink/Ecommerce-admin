@@ -1,3 +1,15 @@
+## Ecommerce Admin Panel
+A Admin panel to manage orders received from front end App of Ecommerce Website. [ecommerce-admin-acny.vercel.app](https://ecommerce-front-roan-two.vercel.app/)
+
+### ScreenShots
+![Screenshot 2023-05-24 at 10 46 09 AM](https://github.com/saqlaink/Ecommerce-admin/assets/78160447/7f06cbcf-ee1a-4184-ac58-c1ecab2e2539)
+![Screenshot 2023-05-24 at 10 46 30 AM](https://github.com/saqlaink/Ecommerce-admin/assets/78160447/a1d39aa7-c86a-49d6-a914-3c55f5bfe9eb)
+![Screenshot 2023-05-24 at 10 46 42 AM](https://github.com/saqlaink/Ecommerce-admin/assets/78160447/61b9153e-c617-4cfe-b147-830594db90f2)
+![Screenshot 2023-05-24 at 10 46 57 AM](https://github.com/saqlaink/Ecommerce-admin/assets/78160447/4b90c0e8-d689-4180-a4f4-b0fca0492e15)
+![Screenshot 2023-05-24 at 10 47 08 AM](https://github.com/saqlaink/Ecommerce-admin/assets/78160447/d063c39b-2f7b-4699-91ab-bda513a52660)
+![Screenshot 2023-05-24 at 10 47 23 AM](https://github.com/saqlaink/Ecommerce-admin/assets/78160447/32f0e274-e8b8-42b5-b8fc-68fd8e87c324)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
